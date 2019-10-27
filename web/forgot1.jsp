@@ -56,7 +56,7 @@ if(rs.next())
                 message.addRecipient(RecipientType.TO, new InternetAddress(Email));
                 message.saveChanges();
                 Transport transport = session1.getTransport("smtp");
-                transport.connect("smtp.gmail.com", "darshanbhamare7@gmail.com", "Sunil@78");
+                transport.connect("smtp.gmail.com", "darshanbhamare7@gmail.com", "my_password");
                 transport.sendMessage(message, message.getAllRecipients());
                 transport.close();
                 out.println("Password sent to your email id successfully !");
